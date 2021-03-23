@@ -6,7 +6,10 @@ function init() {
     })
     $('body').click(function(event){
         $('.contesto.prova').removeClass('prova');
-        event.stopPropagation('.contesto')
+    })
+    $('.contesto').click(function(event){
+
+        event.stopPropagation()
     })
 }
 $(document).ready(init)
