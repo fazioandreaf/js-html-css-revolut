@@ -1,7 +1,12 @@
 function init() {
     $('nav li').hover(function(){
-        $(this).find('.contesto').css('display','block')
+        $('.contesto.prova').removeClass('prova');
+        $(this).find('.contesto').addClass('prova');
     }, function(){
-        $(this).find('.contesto').css('display','none')})
+    })
+    $('body').click(function(event){
+        $('.contesto.prova').removeClass('prova');
+        event.stopPropagation('.contesto')
+    })
 }
 $(document).ready(init)
