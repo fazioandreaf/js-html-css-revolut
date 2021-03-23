@@ -1,4 +1,7 @@
 function init() {
-    console.log('ciao')
+    $('nav li').hover(function(){
+        $(this).find('.contesto').css('display','block')
+    }, function(){
+        $(this).find('.contesto').css('display','none')})
 }
 $(document).ready(init)
