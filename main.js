@@ -4,7 +4,7 @@ function init() {
         $(this).find('.contesto').addClass('prova');
     }, function(){
     })
-    $('body').click(function(event){
+    $('body').click(function(){
         $('.contesto.prova').removeClass('prova');
     })
     $('.contesto').click(function(event){
